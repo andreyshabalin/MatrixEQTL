@@ -1586,6 +1586,7 @@ Matrix_eQTL_main = function(
             threshfun = function(pv){
                 thr = qt(pv/2, dfFull, lower.tail = FALSE);
                 thr = thr^2;
+                thr[is.infinite(thr)] = .Machine$double.xmax;
                 thr = sqrt(  thr / (dfFull + thr) );
                 thr[pv >= 1] = 0;
                 thr[pv <= 0] = 1;
