@@ -55,3 +55,7 @@ The best way to start using Matrix eQTL is to first run the sample code on the p
 The sample code and data are part of the package and are also available [here](data).
 The package manual contains the sample code at the bottom of the help page for the Matrix eQTL main function.
 Access it via `?Matrix_eQTL_main` command.
+
+The sample code performs eQTL analysis of a toy data set consisting of three files:
+[genotype](data/SNP.txt), [expression](data/GE.txt), and [covariates](data/Covariates.txt).
+For every gene-SNP pair it runs linear regression analysis accounting for the set of covariates.
