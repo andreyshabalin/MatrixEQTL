@@ -48,3 +48,9 @@ if(!requireNamespace("devtools", quietly = TRUE))
     install.packages("devtools")
 devtools::install_github("andreyshabalin/MatrixEQTL")
 ```
+
+## Getting started
+
+The best way to start using Matrix eQTL is to first run the sample code on the provided toy dataset.
+The sample code and data are part of the package and are also available ![here](data).
+The package manual contains the sample code at the bottom of the help page for Matrix eQTL main function available via ?Matrix_eQTL_main command.
