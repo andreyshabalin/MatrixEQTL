@@ -75,7 +75,7 @@ base.dir = find.package("MatrixEQTL")
 # Then we set the parameters such as selected linear model and
 # names of genotype and expression data files.
 
-useModel = modelLINEAR; # modelANOVA or modelLINEAR or modelLINEAR_CROSS
+useModel = modelLINEAR # modelANOVA or modelLINEAR or modelLINEAR_CROSS
 SNP_file_name = paste0(base.dir, "/data/SNP.txt")
 expression_file_name = paste0(base.dir, "/data/GE.txt")
 
@@ -83,7 +83,7 @@ expression_file_name = paste0(base.dir, "/data/GE.txt")
 # In case of no covariates set the variable covariates_file_name to character().
 
 covariates_file_name = paste0(base.dir, "/data/Covariates.txt")
-output_file_name = tempfile();
+output_file_name = tempfile()
 
 # The p-value threshold determines which gene-SNP associations are
 # saved in the output file output_file_name.
@@ -97,7 +97,7 @@ pvOutputThreshold = 1e-2
 # This parameter is rarely used.
 # If the covariance matrix is a multiple of identity, set it to numeric().
 
-errorCovariance = numeric();
+errorCovariance = numeric()
 
 # The next section of the sample code contains three very similar parts
 # loading the files with genotype, gene expression, and covariates.
@@ -111,7 +111,7 @@ errorCovariance = numeric();
 
 snps = SlicedData$new()
 snps$fileDelimiter = "\t"      # the TAB character
-snps$fileOmitCharacters = "NA" # denote missing values;
+snps$fileOmitCharacters = "NA" # denote missing values
 snps$fileSkipRows = 1          # one row of column labels
 snps$fileSkipColumns = 1       # one column of row labels
 snps$fileSliceSize = 2000      # read file in pieces of 2,000 rows
@@ -119,7 +119,7 @@ snps$LoadFile( SNP_file_name )
 
 gene = SlicedData$new()
 gene$fileDelimiter = "\t"      # the TAB character
-gene$fileOmitCharacters = "NA" # denote missing values;
+gene$fileOmitCharacters = "NA" # denote missing values
 gene$fileSkipRows = 1          # one row of column labels
 gene$fileSkipColumns = 1       # one column of row labels
 gene$fileSliceSize = 2000      # read file in pieces of 2,000 rows
@@ -127,7 +127,7 @@ gene$LoadFile( expression_file_name )
 
 cvrt = SlicedData$new()
 cvrt$fileDelimiter = "\t"      # the TAB character
-cvrt$fileOmitCharacters = "NA" # denote missing values;
+cvrt$fileOmitCharacters = "NA" # denote missing values
 cvrt$fileSkipRows = 1          # one row of column labels
 cvrt$fileSkipColumns = 1       # one column of row labels
 cvrt$fileSliceSize = 2000      # read file in pieces of 2,000 rows
@@ -146,7 +146,7 @@ me = Matrix_eQTL_engine(
     verbose = TRUE,
     pvalue.hist = TRUE,
     min.pv.by.genesnp = FALSE,
-    noFDRsaveMemory = FALSE);
+    noFDRsaveMemory = FALSE)
 
 ```
 
@@ -184,7 +184,7 @@ The main Matrix eQTL function `Matrix_eQTL_main` requires several extra paramete
 | -------- | ---  | ------ | ------ |
 | Gene_01  | chr1 | 721289 | 731289 |
 | Gene_02  | chr1 | 752565 | 762565 |
-| Gene_03  | chr1 | 777121 | 787121 |  
+| Gene_03  | chr1 | 777121 | 787121 |
 |  ...     | ...  |  ...   |  ...   |
 
 <!--- For more information see Matrix eQTL reference manual via command `Matrix_eQTL_main` in R or click <code><a href="html/Matrix_eQTL_main.html">Matrix_eQTL_main</a></code>.</p> --->
