@@ -169,9 +169,23 @@ The main Matrix eQTL function `Matrix_eQTL_main` requires several extra paramete
 * `cisDist` &ndash; maximum distance at which gene-SNP pair is considered local.</li>
 * `snpspos` &ndash; data frame with information about SNP locations, must have 3 columns - SNP name, chromosome, and position.
     * See [sample SNP location file](data/snpsloc.txt).
+
+| snpid  | chr  |	pos  |
+| ------ | ---- | ------ |
+| Snp_01 | chr1 | 721289 |
+| Snp_02 | chr1 | 752565 | 
+| Snp_03 | chr1 | 777121 |
+|  ...   | ...  |  ...   |
+
 * `genepos` &ndash; data frame with information about gene locations, must have 4 columns - the name, chromosome, and positions of the left and right ends.
     * See [sample gene location file](data/geneloc.txt)
 
+| geneid   | chr  | left   | right  |
+| -------- | ---  | ------ | ------ |
+| Gene_01  | chr1 | 721289 | 731289 |
+| Gene_02  | chr1 | 752565 | 762565 |
+| Gene_03  | chr1 | 777121 | 787121 |  
+|  ...     | ...  |  ...   |  ...   |
 
 <!--- For more information see Matrix eQTL reference manual via command `Matrix_eQTL_main` in R or click <code><a href="html/Matrix_eQTL_main.html">Matrix_eQTL_main</a></code>.</p> --->
 
