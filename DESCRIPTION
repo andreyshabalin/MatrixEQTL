@@ -1,8 +1,8 @@
 Package: MatrixEQTL
 Type: Package
 Title: Matrix eQTL: Ultra Fast eQTL Analysis via Large Matrix Operations
-Version: 2.3
-Date: 2019-12-04
+Version: 2.4
+Date: 2026-09-01
 Authors@R: person(  "Andrey A", "Shabalin",
                     role = c("aut", "cre"),
                     email = "andrey.shabalin@gmail.com",

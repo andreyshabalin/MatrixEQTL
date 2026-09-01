@@ -28,11 +28,11 @@
     For such analysis one has to set the cis-analysis specific
     parameters \code{pvOutputThreshold.cis > 0},
     \code{cisDist}, \code{snpspos} and 
-    {genepos} in the call of \code{Matrix_eQTL_main} function.
+    \code{genepos} in the call of \code{Matrix_eQTL_main} function.
     A gene-SNP pair is considered local if the 
     distance between them is less or equal to \code{cisDist}.
     The genomic location of genes and SNPs is defined by 
-    the data frames \code{snpspos} and {genepos}.
+    the data frames \code{snpspos} and \code{genepos}.
     Depending on p-value thresholds \code{pvOutputThreshold} and
     \code{pvOutputThreshold.cis} Matrix eQTL runs in 
     one of three different modes:

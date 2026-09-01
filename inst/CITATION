@@ -1,16 +1,16 @@
-citHeader("To cite the 'MatrixEQTL' package in publications use:")
-
-citEntry(
-        entry="article",
+bibentry(
+        bibtype = "Article",
         title = "Matrix {eQTL}: ultra fast {eQTL} analysis via large matrix operations",
-        author = personList(as.person("A.A. Shabalin")),
-        address  = "University of North Carolina at Chapel Hill",
-        year     = "2012",
-        url      = "http://www.bios.unc.edu/research/genomic_software/Matrix_eQTL/",
+        author = person(  "Andrey A", "Shabalin",
+                          role = c("aut", "cre"),
+                          email = "andrey.shabalin@gmail.com",
+                          comment = c(ORCID = "0000-0003-0309-6821")),
         publisher= "Oxford Univ Press",
         journal  = "Bioinformatics",
+        year     = "2012",
         volume   = "28",
         number   = "10",
         pages    = "1353--1358",
+        doi      = "10.1093/bioinformatics/bts163",
         textVersion = "Shabalin, Andrey A. Matrix eQTL: ultra fast eQTL analysis via large matrix operations. Bioinformatics 28, no. 10 (2012): 1353-1358."
 )
